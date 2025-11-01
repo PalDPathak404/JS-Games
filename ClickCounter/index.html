@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Counter Game</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-   <link rel="icon" href="https://res.cloudinary.com/diekdvh6t/image/upload/v1762015522/Screenshot_2025-11-01_221504_v8zkro.png" type="image/svg+xml">
+    <link rel="icon"
+        href="https://res.cloudinary.com/diekdvh6t/image/upload/v1762015522/Screenshot_2025-11-01_221504_v8zkro.png"
+        type="image/svg+xml">
     <style>
         * {
             margin: 0;
@@ -22,7 +24,7 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            padding: 10px;
             position: relative;
             overflow: hidden;
         }
@@ -41,11 +43,11 @@
         }
 
         .main-heading {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: bold;
             color: white;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
             z-index: 2;
             position: relative;
@@ -54,9 +56,9 @@
         .game-container {
             background: white;
             border-radius: 20px;
-            padding: 40px;
+            padding: 25px 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
+            max-width: 480px;
             width: 100%;
             text-align: center;
             position: relative;
@@ -65,21 +67,21 @@
 
         h1 {
             color: #333;
-            margin-bottom: 10px;
-            font-size: 2rem;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
         }
 
         .subtitle {
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 1rem;
         }
 
         .username-section {
             background: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%);
-            padding: 16px 30px;
+            padding: 14px 30px;
             border-radius: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
             box-shadow: 0 6px 20px rgba(167, 139, 250, 0.4);
             border: 2px solid rgba(255, 255, 255, 0.3);
             position: relative;
@@ -100,12 +102,12 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
         .score-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            padding: 16px;
             border-radius: 12px;
             color: white;
         }
@@ -123,7 +125,7 @@
         }
 
         .timer-section {
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
         .timer-label {
@@ -141,14 +143,14 @@
 
         .click-button {
             width: 100%;
-            padding: 20px;
+            padding: 18px;
             font-size: 1.3rem;
             background: #d1d5db;
             color: white;
             border: none;
             border-radius: 12px;
             cursor: not-allowed;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: bold;
             transition: all 0.2s;
         }
@@ -170,12 +172,12 @@
         .control-buttons {
             display: flex;
             gap: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .control-btn {
             flex: 1;
-            padding: 15px;
+            padding: 13px;
             font-size: 1rem;
             border: none;
             border-radius: 10px;
@@ -228,7 +230,7 @@
 
         .reset-btn {
             width: 100%;
-            padding: 15px;
+            padding: 13px;
             background: #ef4444;
             color: white;
             border: none;
@@ -236,7 +238,7 @@
             font-size: 1rem;
             cursor: pointer;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             transition: background 0.3s;
         }
 
@@ -301,7 +303,7 @@
         let timeRemaining = 10;
         let timerInterval = null;
         let gameActive = false;
-        let gamePaused = false;Plugin
+        let gamePaused = false; Plugin
         let gameStarted = false;
         let username = "Guest";
         let previousHighScore = 0;
@@ -478,4 +480,5 @@
         loadFromStorage();
     </script>
 </body>
+
 </html>
